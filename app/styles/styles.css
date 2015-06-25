@@ -1,0 +1,174 @@
+.center{
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+.form_card{
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.profile_pic{
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+}
+#profile_pic{
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+}
+.rotate{
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.logo{
+    object-fit: cover;
+    width: 100px;
+}
+
+  #spinner {
+    -webkit-animation-name: spinner;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 4s;
+
+    animation-name: spinner;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
+  /* WebKit and Opera browsers */
+  @-webkit-keyframes spinner {
+    from { -webkit-transform: rotateY(0deg);    }
+    to   { -webkit-transform: rotateY(-360deg); }
+  }
+
+  /* all other browsers */
+  @keyframes spinner {
+    from {
+      -moz-transform: rotateY(0deg);
+      -ms-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+    }
+    to {
+      -moz-transform: rotateY(-360deg);
+      -ms-transform: rotateY(-360deg);
+      transform: rotateY(-360deg);
+    }
+  }
+.form_card_wrapper{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    width: 500px;
+}
+.full_width{
+   /* width: 100%;*/
+}
+.mini_icon{
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+}
+.student_card{
+    width: 50%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+.align_right{
+    text-align: right;
+}
+.align_center{
+    text-align: center;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #673AB7;
+}
+.with_guy_color {
+    background: #673AB7
+}
+.guy_nav{
+  padding-top: 10px;
+  position: relative;
+  color: #673AB7;
+}
+.with_guy_color:hover {
+    background: #673AB7
+}
+h2 {
+    font-style: oblique
+}
+.guy_font_color {
+    color: #673AB7
+}
+.formCard{
+  min-width: 30%;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.content{
+  top: 135px;
+  left: 50%;
+  position: absolute;
+}
+.inner_content{
+  position: relative; left: -50%;
+  max-width: 100%;
+}
+.content_wrapper{
+  max-width: 100%;
+  overflow: auto;
+}
+body{
+  width: 100%;
+  overflow: visible;
+  background-color: #E8EAEC;
+}
+.alphon_card{
+  padding-top: 100px;
+  padding-bottom: 90px;
+  width: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+select{
+  padding-right: 20px;
+}
+.bring-to-front{
+  z-index: -1; position:relative
+}
+.purple-text {
+  color: #673AB7 !important;
+}
+.purple-background {
+  background: #673AB7 !important;
+}
+.cool-list ul{
+  width: 100% !important;
+}
+.cool-list li{
+  padding: 10px 20px;
+}
+.footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

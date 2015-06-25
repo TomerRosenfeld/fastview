@@ -1,0 +1,43 @@
+<nav style="height: 240px; width: 100% !important;" class="z-depth-3">
+  <div class="nav-wrapper guy_nav with_guy_color " style="height: 240px; width: 100%">
+    <h3 class="white-text left-align" style="float: left">FastView</h3>
+    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down right" style="float: right">
+      <li><a href="#/" ng-show="logedIn" ng-click="logOut();">התנתק</a></li>
+      <li><a href="#/about">אודות</a></li>
+      <li><a href="#/contact">צור קשר</a></li>
+      <li><a ng-show="admin" href="#/timetable">מערכת שעות</a></li>
+      <li><a ng-show="admin" href="#/groups">כרטיסי קבוצות</a></li>
+      <li><a ng-show="admin" href="#/students_cards">כרטיסי תלמיד</a></li>
+      <li><a href="#/alphon">אלפון</a></li>
+      <li class="admin"><a href="#/">בית</a></li>
+    </ul>
+    <ul class="side-nav" id="mobile-demo">
+      <li class="admin"><a href="#/">בית</a></li>
+      <li><a ng-show="admin" href="#/alphon">אלפון</a></li>
+      <li><a ng-show="admin" href="#/students_cards">כרטיסי תלמיד</a></li>
+      <li><a ng-show="admin" href="#/groups">כרטיסי קבוצות</a></li>
+      <li><a ng-show="admin" href="#/timetable">מערכת שעות</a></li>
+      <li><a href="#/about">אודות</a></li>
+      <li><a href="#/contact">צור קשר</a></li>
+      <li><a href="#/" ng-show="logedIn" ng-click="logOut();">התנתק</a></li>
+
+    </ul>
+  </div>
+</nav>
+
+<div ng-show="admin" class="fixed-action-btn animated zoomIn" style="right: 2%;bottom: 10%" >
+  <a class="btn-floating btn-large red z-depth-3">
+    <i class="large mdi-content-add"></i>
+  </a>
+  <ul>
+    <li><a  href="#/sign_up" class="btn-floating red z-depth-3"><i class="large mdi-action-account-circle"></i></a></li>
+    <li><a  href="#/addGroup" class="btn-floating red z-depth-3"><i class="large mdi-social-group"></i></a></li>
+  </ul>
+</div>
+
+<script>    $(".button-collapse").sideNav();
+</script>
+<style>
+
+</style>

@@ -1,0 +1,57 @@
+<div class="card center form_card_wrapper student_card animated zoomInUp z-depth-5">
+  <div class="card-image profile_pic" style="position: absolute;left: 0">
+    <img id="profile_pic" class="profile_pic left"  src='{{student.get("pic").url()}}'>
+  </div>
+  <table dir="rtl" >
+    <tr>
+      <td class="align_right">שם</td>
+      <td><input ng-model="name"></td>
+    </tr>
+    <tr>
+      <td class="align_right">תעודת זהות</td>
+      <td><input ng-model="username"></td>
+    </tr>
+    <tr>
+      <td class="align_right">מין</td>
+      <td>
+        <p>{{student.get('gender')}}</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="align_right">אימייל</td>
+      <td><input ng-model="email"></td>
+    </tr>
+    <tr>
+      <td class="align_right">תאריך לידה</td>
+      <td>{{student.get("birthday").toLocaleDateString()}}</td>
+
+    </tr>
+
+    <tr>
+      <td class="align_right">מספר טלפון</td>
+      <td><input ng-model="phone"></td>
+    </tr>
+
+    <tr>
+      <td class="align_right">בית ספר</td>
+      <td><input ng-model="school"></td>
+
+    </tr>
+
+    <tr>
+      <td class="align_right">שם הורה</td>
+      <td><input ng-model="parent_name"></td>
+    </tr>
+    <tr>
+      <td class="align_right">מספר טלפון של הורה</td>
+      <td><input ng-model="parent_phone"></td>
+    </tr>
+  </table>
+  <a ng-click="Confirm()" class="btn-floating btn-large waves-effect waves-light with_guy_color"><i class="mdi-action-done"></i></a>
+</div>
+<style>
+  td{
+    text-align: right
+  }
+</style>

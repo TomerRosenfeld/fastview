@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+    <file url="file://$PROJECT_DIR$/Gruntfile.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/app.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/controllers/alphon.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/controllers/baseCtrl.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/controllers/groups.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/controllers/log_in.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/controllers/main.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/controllers/signUpCtrl.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/controllers/studentCard.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/controllers/studentsCardsCtrl.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/js.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/styles/backup.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/styles/main.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/styles/materialize.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/styles/styles.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/addGroup.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/editStudent.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/footer.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/groups.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/main.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/mobile_page.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/nav.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/sign_upAngular.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/students_cards.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/viewGroup.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/wrapper.html" charset="UTF-8" />
+  </component>
+</project>

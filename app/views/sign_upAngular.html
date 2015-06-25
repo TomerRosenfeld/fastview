@@ -1,0 +1,52 @@
+<div class="card animated zoomInUp center formCard z-depth-5" style="width: 100%">
+  <div class="card-image">
+    <img id="profile_pic" ng-src="{{picture}}" src="images/default_profile_pic.png">
+  </div>
+  <form class="col s12 center form_card">
+    <script>
+      $(document).ready(function() {
+      $('select').material_select();
+    });
+    </script>
+
+    <input placeholder="שם" ng-model="name" type="text" >
+    <input ng-model="UserName" type="text" placeholder="תעודת זהות">
+    <div class="input-field col s12 ">
+      <select dir="rtl" ng-model="gender" style="padding-right: 100px; z-index: 1000">
+        <option value="" disabled selected>בחר מין</option>
+        <option value="בן" dir="rtl">בן</option>
+        <option value="בת">בת</option>
+        <option value="אחר">אחר</option>
+      </select>
+    </div>
+    <input type="date" title="תאריך לידה" ng-model="birthday">
+    <div class="file-field input-field" dir="rtl" >
+<!--      <div class="btn waves-effect waves-light" style=" z-index: 0!important;">
+        <span>תמונה</span>
+        <input ng-model="photo" id="picture"
+               onchange="angular.element(this).scope().file_changed(this)"
+               type="file" accept="image/*" />
+      </div>
+
+    -->
+      <div class="file-field input-field">
+        <div class="btn">
+          <span>תמונה</span>
+          <input id="imgInput" type="file" />
+        </div>
+      </div>
+    <br>
+    </div>
+    <input placeholder="EMail" ng-model="email" type="text" >
+    <input placeholder="סיסמא" ng-model="password" type="text" >
+    <input placeholder="מספר טלפון" ng-model="phone" type="text" maxlength="10" >
+    <input placeholder="בית ספר" ng-model="school" type="text" >
+    <input placeholder="שם הורה" ng-model="parent_name" type="text" >
+    <input placeholder="מספר טלפון של הורה" ng-model="parent_phone" type="text" maxlength="10">
+  </form>
+  <button class="btn waves-effect waves-light" ng-click="signUp()" type="button" name="action">הוסף תלמיד
+    <i class="mdi-content-send left rotate "></i>
+  </button>
+  <br>
+  <br>
+</div>

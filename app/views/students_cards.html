@@ -1,0 +1,10 @@
+<div class="card center form_card_wrapper student_card animated zoomInUp z-depth-5">
+  <div class="input-field">
+    <input style="padding-right: 50px" placeholder="חפש" ng-model="searchText" id="search" type="search" required>
+    <label for="search"><i class="mdi-action-search"></i></label>
+    <i class="mdi-navigation-close"></i>
+  </div>
+  <div class="collection" ng-repeat="student in Students | filter:searchText | orderBy:predicate:reverse">
+    <a ng-click="editStudent(Students.indexOf(student))" class="collection-item">{{student.get("name")}}</a>
+  </div>
+</div>
