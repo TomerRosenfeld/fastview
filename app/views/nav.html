@@ -4,8 +4,8 @@
     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
     <ul id="nav-mobile" class="right hide-on-med-and-down right" style="float: right">
       <li><a href="#/" ng-show="logedIn" ng-click="logOut();">התנתק</a></li>
-      <li><a href="#/about">אודות</a></li>
-      <li><a href="#/contact">צור קשר</a></li>
+      <li ng-show="!admin"><a href="#/about">אודות</a></li>
+      <li ng-show="false"><a href="#/contact">צור קשר</a></li>
       <li><a ng-show="admin" href="#/timetable">מערכת שעות</a></li>
       <li><a ng-show="admin" href="#/groups">כרטיסי קבוצות</a></li>
       <li><a ng-show="admin" href="#/students_cards">כרטיסי תלמיד</a></li>

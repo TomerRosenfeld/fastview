@@ -64,6 +64,9 @@ angular
         templateUrl: 'views/addNews.html',
         controller: 'addNewsCtrl'
       })
+      .when('/about',{
+        templateUrl: 'views/about.html',
+      })
       .otherwise({
         redirectTo: '/'
       });
