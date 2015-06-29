@@ -1,0 +1,21 @@
+<div ng-show="admin" class="card center form_card_wrapper student_card animated zoomInUp z-depth-5" style="max-width: 100%!important; min-width: 200px">
+    <div class="row">
+    <div class="input-field col s12">
+      <input ng-model="title" type="text" class="validate">
+      <label >Title</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <input ng-model="message" type="text" class="validate">
+      <label >Message</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <input ng-model="date" type="text" class="validate">
+      <label >Date</label>
+    </div>
+  </div>
+  <button ng-click="saveNews()" class="btn with_guy_color">DONE</button>
+</div>

@@ -1,0 +1,58 @@
+<div class="card center animated zoomInUp z-depth-5">
+<div class="input-field">
+    <input style="padding-right: 50px" placeholder="חפש" ng-model="searchText" id="search" type="search" required>
+    <label for="search"><i class="mdi-action-search"></i></label>
+    <i class="mdi-navigation-close"></i>
+  </div>
+  <table dir="rtl" >
+    <tr dir="rtl">
+      <th><a ng-click="sortTableBy('name')">שם</a></th>
+      <th>תעודת זהות</th>
+      <th><a ng-click="sortTableBy('gender')">מין</a></th>
+      <th><a ng-click="sortTableBy('email')">Email</a></th>
+      <th><a ng-click="sortTableBy('birthday')">תאריך לידה</a></th>
+      <th>מספר טלפון</th>
+      <th><a ng-click="sortTableBy('school')">בית ספר</a></th>
+      <th><a ng-click="sortTableBy('parent_name')">שם הורה</a></th>
+      <th>מספר טלפון של הורה</th>
+      <th>תמונה</th>
+    </tr>
+    <tr ng-repeat="student in students | filter:searchText | orderBy:predicate:reverse">
+      <td>{{student.get("name")}}</td>
+      <td>{{student.get("username")}}</td>
+      <td>
+        {{student.get("gender");}}
+      </td>
+      <td>{{student.get("email")}}</td>
+      <td>{{student.get("birthday").toLocaleDateString()}}</td>
+      <td>{{student.get("phone")}}</td>
+      <td>{{student.get("school")}}</td>
+      <td>{{student.get("parent_name")}}</td>
+      <td>{{student.get("parent_phone")}}</td>
+      <td><img class="mini_icon" ng-src="{{student.get('pic').url()}}" /></td>
+    </tr>
+  </table>
+  <br>
+  <br>
+  <br>
+  <br>
+    <ul>
+      <li class="flow-text"> מרכז:  {{groupToView.get("name")}}</li>
+      <li class="flow-text"> מקצוע:  {{groupToView.get("major")}}</li>
+      <li class="flow-text"> כיתה:  {{groupToView.get("grade")}}</li>
+      <li class="flow-text"> יום: {{days[groupToView.get("day")]}}</li>
+      <li class="flow-text"> שעה:  {{groupToView.get("time")}}</li>
+      <li class="flow-text"> מורה:  {{groupToView.get("teacher")}}</li>
+    </ul>
+  </div>
+<style>
+  table, th, td {
+    border-collapse: collapse;
+  }
+  th, td {
+    min-width: 100px;
+    padding: 5px;
+    text-align: center;
+  }
+
+</style>

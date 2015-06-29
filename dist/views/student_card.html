@@ -1,0 +1,51 @@
+<div class="card center form_card_wrapper student_card animated zoomInUp z-depth-5">
+    <div class="card-image profile_pic center">
+        <img id="profile_pic" class="profile_pic" src='{{getFromStorage("pic").url()}}'>
+    </div>
+    <table dir="rtl" >
+         <tr>
+            <td class="align_right">שם</td>
+            <td>{{getFromStorage("name")}}</td>
+        </tr>
+      <tr>
+        <td class="align_right">תעודת זהות</td>
+        <td>{{getFromStorage("username")}}</td>
+      </tr>
+        <tr>
+            <td class="align_right">מין</td>
+            <td>
+              {{getFromStorage('gender')}}
+            </td>
+        </tr>
+
+        <tr>
+            <td class="align_right">אימייל</td>
+            <td>{{getFromStorage("email")}}</td>
+        </tr>
+        <tr>
+            <td class="align_right">תאריך לידה</td>
+            <td>{{getFromStorage("birthday").toLocaleDateString()}}</td>
+
+        </tr>
+
+        <tr>
+            <td class="align_right">מספר טלפון</td>
+            <td>{{getFromStorage("phone")}}</td>
+        </tr>
+
+        <tr>
+            <td class="align_right">בית ספר</td>
+            <td>{{getFromStorage("school")}}</td>
+
+        </tr>
+
+        <tr>
+            <td class="align_right">שם הורה</td>
+            <td>{{getFromStorage("parent_name")}}</td>
+        </tr>
+        <tr>
+            <td class="align_right">מספר טלפון של הורה</td>
+            <td>{{getFromStorage("parent_phone")}}</td>
+        </tr>
+    </table>
+</div>

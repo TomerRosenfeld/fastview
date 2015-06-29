@@ -1,0 +1,10 @@
+<div class="card center form_card_wrapper student_card animated zoomInUp z-depth-5" ng-show="admin">
+  <div class="collection" ng-repeat="group in groups">
+    <a ng-click="viewGroup($index)" class="with_guy_color collection-item purple-text">{{group.get("name")}}</a>
+  </div>
+  <a href="#/addGroup">
+  <button class="btn purple" >
+      הוסף קבוצה
+  </button>
+  </a>
+</div>

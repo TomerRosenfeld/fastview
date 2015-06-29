@@ -1,0 +1,47 @@
+<div class="card center form_card_wrapper alphon_card animated zoomInUp z-depth-5"  style="overflow-x: scroll;">
+<h3>אלפון</h3>
+  <div class="input-field center" style="max-width: 70%" >
+    <input style="padding-right: 50px;" placeholder="חפש" ng-model="searchText" id="search" type="search" required>
+    <label for="search"><i class="mdi-action-search"></i></label>
+    <i class="mdi-navigation-close"></i>
+  </div>
+
+<table dir="rtl">
+  <tr dir="rtl" >
+    <th><a class="purple-text" ng-click="sortTableBy('name')">שם</a></th>
+   <!-- <th>תעודת זהות</th>-->
+    <th><a class="purple-text" ng-click="sortTableBy('gender')">מין</a></th>
+    <th><a class="purple-text" ng-click="sortTableBy('email')">Email</a></th>
+<!--    <th><a class="purple-text" ng-click="sortTableBy('birthday')">תאריך לידה</a></th>-->
+    <th>מספר טלפון</th>
+<!--    <th><a class="purple-text" ng-click="sortTableBy('group')">קבוצה</a></th>-->
+ <!--   <th><a class="purple-text" ng-click="sortTableBy('school')">בית ספר</a></th>-->
+    <th>שם הורה</th>
+    <th>מספר טלפון של הורה</th>
+    <th>תמונה</th>
+  </tr>
+  <tr ng-repeat="student in students | filter:searchText | orderBy:predicate:reverse">
+    <td>{{student.get("name")}}</td>
+    <!--<td>{{student.get("username")}}</td>-->
+    <td>{{student.get("gender");}}</td>
+    <td>{{student.get("email")}}</td>
+ <!--   <td>{{student.get("birthday").toLocaleDateString()}}</td>-->
+    <td>{{student.get("phone")}}</td>
+   <!-- <td>{{student.get("group")}}</td>-->
+ <!--   <td>{{student.get("school")}}</td>-->
+    <td>{{student.get("parent_name")}}</td>
+    <td>{{student.get("parent_phone")}}</td>
+    <td><img class="mini_icon" ng-src="{{student.get('pic').url()}}" /></td>
+  </tr>
+</table>
+</div>
+<style>
+  table, th, td {
+    border-collapse: collapse;
+  }
+  th, td {
+    min-width: 100px;
+    padding: 5px;
+    text-align: center;
+  }
+</style>

@@ -1,0 +1,27 @@
+<div class="card formCard center animated zoomInUp z-depth-5" style="min-width: 50%" >
+    <img src="images/default_profile_pic.png" class="profile_pic">
+    <form class="form_card" style="min-width: 70%">
+        <input id="username" placeholder="תעודת זהות" ng-model="name" type="text" class="validate">
+        <input id="password" placeholder="סיסמא" ng-model="password" type="password" class="validate">
+      <button class="btn waves-effect with_guy_color  hvr-grow"  type="button" name="action" id="submit" ng-click="login();" >התחבר
+        <i class="mdi-content-send left rotate "></i>
+      </button>
+      <br>
+      <br>
+      <a  href="#/sign_up">
+        <button class="btn waves-effect waves-light with_guy_color hvr-grow"  type="button" name="action">הרשם</button>
+      </a>
+    </form>
+
+
+    <br>
+    <br>
+</div>
+<script>
+  $(document).ready(function(){
+    $('#password').keypress(function(e){
+      if(e.keyCode==13)
+        $('#submit').click();
+    });
+  });
+</script>

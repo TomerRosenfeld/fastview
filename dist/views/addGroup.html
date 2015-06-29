@@ -1,0 +1,48 @@
+<div class="card center form_card_wrapper student_card animated zoomInUp z-depth-5" ng-show="admin">
+  <table dir="rtl" >
+    <tr>
+      <td class="align_right">מרכז</td>
+      <td><input ng-model="name"></td>
+    </tr>
+    <tr>
+      <td class="align_right">מקצוע</td>
+      <td><input ng-model="major"></td>
+    </tr>
+    <tr>
+      <td class="align_right">כיתה</td>
+      <td><input ng-model="grade"></td>
+    </tr>
+    <tr>
+      <td class="align_right">יום ושעה</td>
+      <td>
+        <script>$(document).ready(function() {
+          $('select').material_select();
+        });</script>
+        <br>
+
+        <select ng-model="day" class="browser-default left" style="width: 45%">
+            <option  value="" disabled selected>בחר יום</option>
+            <option value="1">ראשון</option>
+            <option value="2">שני</option>
+            <option value="3">שלישי</option>
+            <option value="4">רביעי</option>
+            <option value="5">חמישי</option>
+            <option value="6">שישי</option>
+            <option value="7">שבת</option>
+          </select>
+        <br>
+        <br>
+        <br>
+        <input placeholder="שעה" ng-model="hour">
+      </td>
+
+    </tr>
+
+    <tr>
+      <td class="align_right">מורה</td>
+      <td><input ng-model="teacher"></td>
+    </tr>
+
+  </table>
+  <a ng-click="addGroup()" class="btn-floating btn-large waves-effect waves-light purple-background"><i class="mdi-action-done"></i></a>
+</div>

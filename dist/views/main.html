@@ -1,0 +1,23 @@
+<div class="card center form_card_wrapper student_card animated zoomInUp z-depth-5" style="max-width: 100%!important; min-width: 200px">
+  <br>
+  <ul class="cool-list"  >
+    <li ng-show="admin" class=""><a class="purple-text" href="#/alphon">אלפון</a></li>
+    <li ng-show="admin" class=""><a class="purple-text" href="#/students_cards">כרטיסי תלמיד</a></li>
+    <li ng-show="admin" class=""><a class="purple-text" href="#/groups">כרטיסי קבוצות</a></li>
+    <li ng-show="admin" class=""><a class="purple-text" href="#/">מערכת שעות</a></li>
+    <li ng-show="admin" class=""><a class="purple-text" href="#/addNews"> הוסף חדשות</a></li>
+    <li ng-show="student">אתה לומד ב{{user.get("school")}}</li>
+    <li ng-show="student" ><a class="purple-text" ng-click="viewStudentGroup()">הקבוצה שלך</a></li>
+    <li ng-show="student" ><a class="purple-text" href="#/student_card">הפרופיל שלך</a></li>
+  </ul>
+  <h2>לוח מודעות</h2>
+  <marquee scrollAmount="5" class="center" style="max-height: 400px" behavior="scroll" direction="up"  onmouseover="this.stop();" onmouseout="this.start();" >
+    <span ng-repeat="new in news">
+      <p style="color: #673AB7;font-size: 20px">{{new.get("title")}}</p>
+      <p style="color: #000000">{{new.get("message")}}</p>
+      <p style="color: #ff0000">{{new.get("date")}}</p>
+    </span>
+  </marquee>
+  <br>
+</div>
+
