@@ -1,5 +1,4 @@
 # פרויקט אתרים fastview
-
 ספר הפרויקט נמצא ב
 
 <a href="http://www.tomerrosenfeld.info/Book">www.tomerrosenfeld.info/Book</a>
@@ -20,7 +19,7 @@
 
 4.grunt serve
 
-# פרויקט אתרים fastview
+#  fastview Project
 
 Project book can be found <a href="http://www.tomerrosenfeld.info/Book">HERE</a>
 
