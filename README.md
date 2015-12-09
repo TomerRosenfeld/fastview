@@ -19,3 +19,9 @@
 3.grunt build
 
 4.grunt serve
+
+# פרויקט אתרים fastview
+
+Project book can be found <a href="http://www.tomerrosenfeld.info/Book">HERE</a>
+
+You can view the project live <a href="http://www.tomerrosenfeld.info/Guy">HERE</a>
